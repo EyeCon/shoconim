@@ -1,4 +1,4 @@
-{.compile:"shoco.c"}
+{.compile:"shoco.c".}
 proc shoco_compress*(inbuffer: cstring; len: csize_t; outbuffer: cstring;
                         bufsize: csize_t): csize_t {.importc: "shoco_compress", header: "shoco.h".}
 proc shoco_decompress*(inbuffer: cstring; len: csize_t; outbuffer: cstring;
